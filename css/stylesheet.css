@@ -11,7 +11,7 @@
 
 :root {
 
-	--main-color: #548689;
+	--main-color: #5CACEE;
 	--main-text-color:#FFF;
 	--border-color: #999;
 	--bio-bg-color: #1E2A3A;
@@ -81,13 +81,25 @@
 	margin-bottom: 25px;
 }
 
+.cloud {
+
+	height: 70px;
+	width: 70px;
+}
+
+.aws {
+
+	height: 70px;
+	width: 125px;
+}
+
 #social-container {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  border-bottom: 1px solid var(--border-color);
-  margin-bottom: 25px;
-  padding-bottom: 25px;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	border-bottom: 1px solid var(--border-color);
+	margin-bottom: 25px;
+	padding-bottom: 25px;
 }
 
 #social-container li {
@@ -139,7 +151,7 @@
 
 .description {
 
-	max-width: 75%;
+	max-width: 100%;
 	margin-bottom: 10px;
 }
 
@@ -204,4 +216,54 @@
 .skills-box i {
 	font-size: 45px;
 	margin-right: 10px;
+}
+
+/* Mobile */
+
+@media(max-width: 450px){
+
+	#container {
+		flex-direction: column;
+	}
+
+	#bio-container {
+		min-height: auto;
+		border-right: none;
+		border-bottom: 5px solid var(--bio-border-color);
+	}
+
+	#bio-container h2 {
+		display: none;
+	}
+
+	#bio-container p {
+		max-width: 60%;
+		margin: 10px auto;
+	}
+
+	#about-container {
+		text-align: center;
+		padding: 30px;
+	}
+
+	#about-container .description {
+		margin: 10px auto;
+		max-width: 100px;
+		line-height: 26px;
+	}
+	#btn-projects{
+		margin: 1 1 100%;
+	}
+
+	.skills-box {
+		flex: 1 1 100%;
+		max-width: 100%;
+		margin-bottom: 40px;
+		text-align: left;
+	}
+
+	.skills-box i {
+		font-size: 60px;
+	}
+
 }
