@@ -96,7 +96,7 @@
 
 .zabbix {
 	height: 40px;
-	width:  70px;
+	width:  58px;
 	border-radius: 5px;
 }
 
@@ -260,11 +260,12 @@
 
 	#about-container .description {
 		margin: 10px auto;
-		max-width: 100px;
+		max-width: 100%;
 		line-height: 26px;
 	}
+
 	#btn-projects{
-		margin: 1 1 100%;
+		margin: 20px auto;
 	}
 
 	.skills-box {
